@@ -19,10 +19,10 @@ REPO_NAME="$1"
 
 # define destination directory
 if [ -n "$2" ]; then
-  # second argument
+  # second argument is first priority
   DEST_DIR="$2"
 else
-  # export dotenv for destination directory
+  # export dotenv is second
   DOTENV_FILE=""${SCRIPT_DIR}"/.env"
   if [ -e "$DOTENV_FILE" ]; then
     set -a
@@ -31,7 +31,7 @@ else
   fi
 fi
 if [ -z "$DEST_DIR" ]; then
-  # current dir
+  # current dir is third
   DEST_DIR=`pwd`
 fi
 
