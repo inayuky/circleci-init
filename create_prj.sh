@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# check github cli is installed
+type gh > /dev/null 2>&1
+if [ $? = 1 ]; then
+  echo "error: gh command not found. (please install github cli)"
+  exit 1
+fi
+
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
 
 # check repogitory name is given
