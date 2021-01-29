@@ -52,11 +52,3 @@ cd "$REPO_NAME"
 git pull origin main
 git branch -M main
 git branch -u origin/main
-
-# copy circleci template and create initial commit
-# cp -a "${SCRIPT_DIR}/.circleci" "${REPO_NAME}/"
-# cd $REPO_NAME
-# git add .
-# git commit -m "initial commit"
-# git branch -M main
-# git push -u origin main
