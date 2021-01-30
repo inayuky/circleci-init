@@ -6,7 +6,7 @@ githubのリポジトリとローカルリポジトリをすぐに作成でき�
 
 ## Features
 
-1. github cliを利用してgithubに新規リポジトリを作成する
+1. github cliを利用し、circleci用に用意したテンプレートリポジトリからgithubに新規リポジトリを作成する
 2. githubリポジトリに対応するgitリポジトリをローカル環境の指定したパスに作成する
 
 ## Requirement
