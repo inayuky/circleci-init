@@ -42,6 +42,7 @@ circleci-init reponame1
 ```
 
 パスは`.env`ではなく第２引数でも指定できる。
+`.env`で指定したパスより第２引数の方が優先される。
 
 ```
 circleci-init reponame1 "/path/to/repo"
