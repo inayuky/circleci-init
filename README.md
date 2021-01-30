@@ -1,7 +1,7 @@
 # circleci-init
 
 ## Description
-circleci用のリポジトリをテンプレートリポジトリから作成するコマンド
+circleci用のリポジトリをテンプレートリポジトリから作成するコマンド。  
 githubのリポジトリとローカルリポジトリをすぐに作成できる。
 
 ## Features
@@ -34,7 +34,7 @@ DEST_DIR="/path/to/repo"
 
 ## Usage
 
-`.env`で指定したパスに`reponame1`のリポジトリを作成する。
+`.env`で指定したパスに`reponame1`のリポジトリを作成する。  
 なお、`.env`にパスを入力していない場合はカレントディレクトリにリポジトリが作成される。
 
 ```
