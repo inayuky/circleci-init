@@ -9,9 +9,9 @@ fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE:-$0}")"; pwd)"
 
-# check repogitory name is given
+# check repository name is given
 if [ -z "$1" ]; then
-  echo "error: specify repogitory name."
+  echo "error: specify repository name."
   exit 1
 fi
 
@@ -41,7 +41,7 @@ if [ ! -e "$DEST_DIR" ]; then
 fi
 
 if [ "$DEST_DIR" = "$SCRIPT_DIR" ]; then
-  # this script dir is git repogitory. dest dir cannot be the same dir.
+  # this script dir is git repository. dest dir cannot be the same dir.
   echo "error: specify dest dir path. (or execute from different directory)"
   exit 1
 fi
@@ -49,11 +49,11 @@ fi
 echo "dest_dir = ${DEST_DIR}"
 echo "repo_name = ${REPO_NAME}"
 
-# create repogitory at github from template repogitory
+# create repository at github from template repository
 cd "$DEST_DIR"
 gh repo create -y "$REPO_NAME" --private -p circleci-template
 
-sleep 1 # wait for creating github repogitory
+sleep 1 # wait for creating github repository
 
 cd "$REPO_NAME"
 git pull origin main
