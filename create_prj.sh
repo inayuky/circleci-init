@@ -15,7 +15,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-REPO_NAME="$1"
+REPO_NAME=circleci-sampler-"$1"
 
 # define destination directory
 if [ -n "$2" ]; then
