@@ -34,7 +34,7 @@ DEST_DIR="/path/to/repo"
 
 ## Usage
 
-`.env`で指定したパスに`reponame1`のリポジトリを作成する。  
+githubと`.env`で指定したパスに`circleci-sampler-reponame1`のリポジトリを作成する。  
 なお、`.env`にパスを入力していない場合はカレントディレクトリにリポジトリが作成される。
 
 ```
